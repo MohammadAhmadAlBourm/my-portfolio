@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline'
+            https://cdn.jsdelivr.net
+            https://cdnjs.cloudflare.com;
+        style-src 'self' 'unsafe-inline'
+            https://fonts.googleapis.com
+            https://cdn.jsdelivr.net
+            https://cdnjs.cloudflare.com;
+        font-src 'self'
+            https://fonts.gstatic.com
+            https://cdnjs.cloudflare.com;
+        img-src 'self'
+            https://images.unsplash.com
+            https:
+            data:;
+        connect-src 'self'
+            https://localhost:7011
+            https://cdn.jsdelivr.net;
+        frame-src 'none';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+        upgrade-insecure-requests;
+    " />
+
+
+    <!-- Primary SEO -->
+    <title>Mohammad Al Bourm – Senior Software Engineer | .NET, Clean Architecture & Web API Expert</title>
+    <meta name="description"
+        content="Award-winning Senior Software Engineer with 6+ years crafting enterprise solutions using .NET Core, Clean Architecture, CQRS, Angular, Flutter & SQL Server. Available for innovative projects." />
+    <meta name="author" content="Mohammad Al Bourm" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://127.0.0.1:5500/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mohammad Al Bourm – Senior Software Engineer" />
+    <meta property="og:description"
+        content="Experienced Senior Software Engineer specializing in .NET, Clean Architecture, Web APIs, CQRS, and scalable enterprise systems." />
+    <meta property="og:url" content="http://127.0.0.1:5500/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://127.0.0.1:5500/assets/images/preview.png" />
+    <meta property="og:site_name" content="Mohammad Al Bourm Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohammad Al Bourm – Senior Software Engineer" />
+    <meta name="twitter:description"
+        content="6+ years building scalable enterprise applications using .NET, Web API, Angular, Flutter, Clean Architecture and CQRS." />
+    <meta name="twitter:image" content="http://127.0.0.1:5500/assets/images/preview.png" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/images/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0f24" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohammad Al Bourm",
+      "url": "http://127.0.0.1:5500/",
+      "jobTitle": "Senior Software Engineer",
+      "description": "Senior Software Engineer specializing in .NET Core, Web API, Clean Architecture, CQRS, Angular, Flutter, SQL Server and enterprise-grade systems.",
+      "image": "http://127.0.0.1:5500/assets/images/1697370960949.jpg",
+      "email": "mohammadbourm@gmail.com",
+      "telephone": "+971522933130",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "AE"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/mohammad-al-bourm-067337166",
+        "https://github.com/MohammadAhmadAlBourm",
+        "https://x.com/BourmMohammad"
+      ],
+      "knowsAbout": [
+        ".NET Core",
+        "Clean Architecture",
+        "CQRS",
+        "Angular",
+        "Flutter",
+        "SQL Server",
+        "Web API"
+      ]
+    }
+    </script>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
+    <!-- Google Fonts - Optimized -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap 5 with SRI -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Font Awesome with SRI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#hero"
+                aria-label="Mohammad Al Bourm - Home">
+                <div class="nav-profile-wrapper">
+                    <img src="/assets/images/1697370960949.jpg" class="nav-profile-img" alt="Mohammad Al Bourm"
+                        width="38" height="38" loading="eager" />
+                    <span class="status-indicator"></span>
+                </div>
+                <span class="brand-text">Mohammad Al Bourm</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link btn-nav-cta" href="#contact">Let's Talk</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-gradient"></div>
+
+        <!-- Animated particles -->
+        <div class="particles" aria-hidden="true">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <div class="badge-pill mb-4 fade-in">
+                        <i class="fas fa-circle pulse-dot"></i>
+                        Available for new opportunities
+                    </div>
+
+                    <h1 class="hero-title fade-in">
+                        Crafting Digital
+                        <span class="gradient-text">Excellence</span>
+                    </h1>
+
+                    <p class="hero-subtitle fade-in">
+                        Senior Software Engineer specializing in building scalable, secure, and high-performance
+                        enterprise solutions with <strong>.NET</strong>, <strong>Clean Architecture</strong>,
+                        and modern frameworks.
+                    </p>
+
+                    <div class="hero-stats fade-in">
+                        <div class="stat-item">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">99%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta fade-in">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            View My Work
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="tech-stack fade-in">
+                        <span class="tech-label">Tech Stack:</span>
+                        <div class="tech-icons">
+                            <span class="tech-badge" title=".NET Core">.NET</span>
+                            <span class="tech-badge" title="Angular">Angular</span>
+                            <span class="tech-badge" title="Flutter">Flutter</span>
+                            <span class="tech-badge" title="SQL Server">SQL</span>
+                            <span class="tech-badge" title="Clean Architecture">Clean Arch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-visual fade-in">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-rocket"></i>
+                            <span>Performance</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag reveal">What I Do</span>
+                <h2 class="section-title reveal">Services & Expertise</h2>
+                <p class="section-subtitle reveal">
+                    Delivering enterprise-grade solutions with cutting-edge technologies
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h3 class="service-title">Mobile Development</h3>
+                        <p class="service-description">
+                            Creating cross-platform mobile applications with Flutter, delivering native performance
+                            and beautiful UI/UX on both iOS and Android.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Cross-Platform Apps</li>
+                            <li><i class="fas fa-check"></i> Native Performance</li>
+                            <li><i class="fas fa-check"></i> Material Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card reveal featured">
+                        <div class="featured-badge">Popular</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Full-Stack Development</h3>
+                        <p class="service-description">
+                            Building robust web applications using ASP.NET Core, Angular, and Clean Architecture
+                            patterns with CQRS and microservices design.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> RESTful API Design</li>
+                            <li><i class="fas fa-check"></i> Microservices Architecture</li>
+                            <li><i class="fas fa-check"></i> Real-time Applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="service-title">System Architecture</h3>
+                        <p class="service-description">
+                            Designing scalable, secure, and cloud-ready architectures with focus on performance,
+                            reliability, and maintainability.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Clean Architecture</li>
+                            <li><i class="fas fa-check"></i> Database Optimization</li>
+                            <li><i class="fas fa-check"></i> Cloud Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section-padding text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag reveal">Portfolio</span>
+                <h2 class="section-title reveal">Featured Projects</h2>
+                <p class="section-subtitle reveal">
+                    Explore some of the enterprise solutions I've architected and delivered
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="/assets/images/project.jpg" alt="Ajman Tourism Development Department"
+                                loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://ajmantourism.ae/home" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-2"></i>View Live
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">.NET Core</span>
+                                <span class="tag">Angular</span>
+                            </div>
+                            <h3 class="project-title">Ajman Tourism Development</h3>
+                            <p class="project-description">
+                                Comprehensive eServices platform enabling tourism establishments to manage licenses,
+                                classifications, and approvals through automated workflows and integrated reporting.
+                            </p>
+                            <div class="project-meta">
+                                <span class="company"><i class="fas fa-building me-2"></i>MLG</span>
+                                <a href="https://ajmantourism.ae/home" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="/assets/images/project.jpg" alt="eTickets Platform" loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://tickets.ajmantourism.ae" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-2"></i>View Live
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">.NET</span>
+                                <span class="tag">Payment Integration</span>
+                            </div>
+                            <h3 class="project-title">eTickets Platform</h3>
+                            <p class="project-description">
+                                Online ticketing system for museums with web and kiosk support, featuring automated
+                                digital ticket delivery via SMS and email.
+                            </p>
+                            <div class="project-meta">
+                                <span class="company"><i class="fas fa-building me-2"></i>MLG</span>
+                                <a href="https://tickets.ajmantourism.ae" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="/assets/images/project.jpg" alt="Afkaar By Emirates Foundation" loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://afkaar.ae/home" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-2"></i>View Live
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Angular</span>
+                                <span class="tag">Workflow</span>
+                            </div>
+                            <h3 class="project-title">Afkaar By Emirates Foundation</h3>
+                            <p class="project-description">
+                                Digital platform enabling public idea submission for Abu Dhabi development, featuring
+                                structured workflows and community engagement tools.
+                            </p>
+                            <div class="project-meta">
+                                <span class="company"><i class="fas fa-building me-2"></i>MLG</span>
+                                <a href="https://afkaar.ae/home" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="/assets/images/project.jpg" alt="Wings Logistics Hub" loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://wingslogistics.world/index.html" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-2"></i>View Live
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Logistics</span>
+                                <span class="tag">Real-time</span>
+                            </div>
+                            <h3 class="project-title">Wings Logistics Hub</h3>
+                            <p class="project-description">
+                                Multi-module logistics platform with freight management, warehouse operations,
+                                real-time tracking, and advanced supply-chain automation.
+                            </p>
+                            <div class="project-meta">
+                                <span class="company"><i class="fas fa-building me-2"></i>MLG</span>
+                                <a href="https://wingslogistics.world/index.html" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="/assets/images/project.jpg" alt="Space Falcon" loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://spacefalcon.world" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-2"></i>View Live
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">IoT</span>
+                            </div>
+                            <h3 class="project-title">Space Falcon</h3>
+                            <p class="project-description">
+                                Autonomous drone management system with AI monitoring, live mission control,
+                                and 24/7 automated flight operations in all weather conditions.
+                            </p>
+                            <div class="project-meta">
+                                <span class="company"><i class="fas fa-building me-2"></i>MLG</span>
+                                <a href="https://spacefalcon.world" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="/assets/images/project.jpg" alt="Dawaa-e" loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://www.dawaa-e.ridgeco.tech" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-2"></i>View Live
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">Healthcare</span>
+                            </div>
+                            <h3 class="project-title">Dawaa-e</h3>
+                            <p class="project-description">
+                                Medicine browsing platform with pharmaceutical classifications, prescription management,
+                                and seamless shopping experience for healthcare products.
+                            </p>
+                            <div class="project-meta">
+                                <span class="company"><i class="fas fa-building me-2"></i>Ridgetech</span>
+                                <a href="https://www.dawaa-e.ridgeco.tech" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 reveal">
+                    <div class="about-image-wrapper">
+                        <div class="about-decoration"></div>
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                            alt="Software Development" class="img-fluid rounded-4" loading="lazy" />
+                        <div class="about-badge">
+                            <div class="badge-content">
+                                <span class="badge-number">6+</span>
+                                <span class="badge-text">Years of Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 reveal">
+                    <div class="section-header mb-4">
+                        <span class="section-tag">About Me</span>
+                        <h2 class="section-title">Passionate About Building Solutions That Matter</h2>
+                    </div>
+
+                    <p class="about-text">
+                        I hold a <strong>Bachelor's degree in Software Engineering</strong> from the Faculty of ICT
+                        Engineering at Arab International University. My passion lies in creating software solutions
+                        that not only meet client requirements but exceed expectations through quality and innovation.
+                    </p>
+
+                    <p class="about-text">
+                        As a <strong>Senior Software Engineer</strong> with over 6 years of experience, I specialize
+                        in full-stack development using .NET Core and Angular. My expertise spans designing scalable
+                        architectures, building secure APIs, and integrating complex enterprise systems.
+                    </p>
+
+                    <div class="about-highlights mt-4">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clean Architecture & Design Patterns</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Enterprise-Grade Security Implementation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>High-Performance Scalable Systems</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Agile & DevOps Best Practices</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cta mt-5">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            Let's Collaborate
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="pdfs/Mohammad  Al Bourm Resume - CV.pdf" class="btn btn-outline-primary btn-lg"
+                            download>
+                            <i class="fas fa-download me-2"></i>Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag reveal">Career Journey</span>
+                <h2 class="section-title reveal">Professional Experience</h2>
+                <p class="section-subtitle reveal">
+                    Building enterprise solutions across diverse industries
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge current">Current</div>
+                        <h3 class="timeline-title">Senior .NET / SharePoint Developer</h3>
+                        <div class="timeline-meta">
+                            <span class="company"><i class="fas fa-building me-2"></i>Sharjah Museums Authority</span>
+                            <span class="period"><i class="fas fa-calendar me-2"></i>Nov 2025 – Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Leading development of enterprise-grade applications and digital transformation initiatives.
+                        </p>
+                        <ul class="timeline-highlights">
+                            <li>Architecting scalable solutions using .NET Core and Angular with Clean Architecture</li>
+                            <li>Implementing CQRS and Mediator patterns for complex business logic</li>
+                            <li>Designing secure API architectures with role-based authorization</li>
+                            <li>Mentoring development team and establishing coding standards</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">.NET Core</span>
+                            <span class="skill-tag">SharePoint</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Clean Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Software Engineer</h3>
+                        <div class="timeline-meta">
+                            <span class="company"><i class="fas fa-building me-2"></i>MLG (Multi Level Group)</span>
+                            <span class="period"><i class="fas fa-calendar me-2"></i>Apr 2022 – Nov 2025</span>
+                        </div>
+                        <p class="timeline-description">
+                            Engineered mission-critical government and enterprise systems handling thousands of daily
+                            transactions.
+                        </p>
+                        <ul class="timeline-highlights">
+                            <li>Developed workflow engine reducing processing time by <strong>50%</strong> for 10,000+
+                                monthly transactions</li>
+                            <li>Built dynamic fee calculation engine for complex transaction computations</li>
+                            <li>Created eService builder cutting development time by <strong>70%</strong></li>
+                            <li>Integrated secure payment gateways handling 5,000+ reliable monthly transactions</li>
+                            <li>Automated reporting pipelines reducing manual effort by <strong>70%</strong></li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">.NET Core</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">Payment Gateways</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Backend Developer</h3>
+                        <div class="timeline-meta">
+                            <span class="company"><i class="fas fa-building me-2"></i>Ridgetech</span>
+                            <span class="period"><i class="fas fa-calendar me-2"></i>Jan 2020 – Dec 2021</span>
+                        </div>
+                        <p class="timeline-description">
+                            Built scalable backend systems for a growing startup in Damascus, Syria.
+                        </p>
+                        <ul class="timeline-highlights">
+                            <li>Designed and implemented scalable databases improving data accessibility</li>
+                            <li>Developed RESTful APIs and admin dashboards streamlining operations</li>
+                            <li>Reduced order processing time by <strong>30%</strong> while maintaining 99.9% uptime
+                            </li>
+                            <li>Contributed to <strong>20%</strong> growth in active users within six months</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">.NET</span>
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">Azure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION - UPDATED WITH HONEYPOT -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="contact-wrapper reveal">
+                        <div class="row g-0">
+                            <div class="col-lg-5 contact-info-section">
+                                <div class="contact-info">
+                                    <div class="section-header mb-4">
+                                        <span class="section-tag">Get In Touch</span>
+                                        <h2 class="section-title text-white">Let's Build Something Amazing Together</h2>
+                                    </div>
+
+                                    <p class="contact-text">
+                                        Have a project in mind or want to discuss opportunities?
+                                        I'm always open to new challenges and collaborations.
+                                    </p>
+
+                                    <div class="contact-details">
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="contact-content">
+                                                <h4>Email</h4>
+                                                <a href="mailto:mohammadbourm@gmail.com">mohammadbourm@gmail.com</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                            <div class="contact-content">
+                                                <h4>WhatsApp</h4>
+                                                <a href="https://wa.me/971522933130" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    +971 52 293 3130
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="contact-content">
+                                                <h4>Location</h4>
+                                                <p>United Arab Emirates</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="social-links">
+                                        <a href="https://www.linkedin.com/in/mohammad-al-bourm-067337166"
+                                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <a href="https://github.com/MohammadAhmadAlBourm" target="_blank"
+                                            rel="noopener noreferrer" aria-label="GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://x.com/BourmMohammad" target="_blank" rel="noopener noreferrer"
+                                            aria-label="Twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 contact-form-section">
+                                <form id="contactForm" class="contact-form" novalidate>
+                                    <!-- Honeypot field for bot detection (hidden from users) -->
+                                    <div style="position: absolute; left: -9999px; top: -9999px;" aria-hidden="true">
+                                        <label for="website">Website (leave blank):</label>
+                                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off"
+                                            aria-hidden="true" />
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="name" class="form-label">Your Name *</label>
+                                                <input type="text" id="name" name="name" class="form-control"
+                                                    placeholder="John Doe" required maxlength="100"
+                                                    autocomplete="name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email" class="form-label">Email Address *</label>
+                                                <input type="email" id="email" name="email" class="form-control"
+                                                    placeholder="john@example.com" required maxlength="254"
+                                                    autocomplete="email" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="mobile" class="form-label">Phone Number *</label>
+                                                <input type="tel" id="mobile" name="mobile" class="form-control"
+                                                    placeholder="+971 50 123 4567" required maxlength="20"
+                                                    autocomplete="tel" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="subject" class="form-label">Subject *</label>
+                                                <input type="text" id="subject" name="subject" class="form-control"
+                                                    placeholder="Project Discussion" required maxlength="200" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="message" class="form-label">Message *</label>
+                                                <textarea id="message" name="message" class="form-control" rows="5"
+                                                    placeholder="Tell me about your project..." required
+                                                    maxlength="5000"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" id="submitBtn" class="btn btn-primary btn-lg w-100">
+                                                <span class="btn-text">Send Message</span>
+                                                <i class="fas fa-paper-plane ms-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4 reveal">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <h3 class="fw-bold mb-3">Mohammad Al Bourm</h3>
+                        <p class="footer-description">
+                            Senior Software Engineer specializing in building scalable, secure, and high-performance
+                            applications using modern technologies and best practices.
+                        </p>
+                        <div class="footer-badge">
+                            <i class="fas fa-code me-2"></i>
+                            Available for freelance & remote work
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-6">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Full-Stack Development</a></li>
+                        <li><a href="#services">Mobile Development</a></li>
+                        <li><a href="#services">System Architecture</a></li>
+                        <li><a href="#services">API Design</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-text">
+                        Subscribe for updates on latest projects and insights.
+                    </p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" id="newsletterEmail" class="form-control" placeholder="Your email"
+                                required aria-label="Email for newsletter" />
+                            <button type="submit" class="btn btn-primary" aria-label="Subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/mohammad-al-bourm-067337166" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/MohammadAhmadAlBourm" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/BourmMohammad" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2025 <strong>Mohammad Al Bourm</strong>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">
+                            Designed & Developed with <i class="fas fa-heart text-danger"></i> by
+                            <strong>Mohammad Al Bourm</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/config/config.js"></script>
+    <script src="contact.js"></script>
+    <script src="subscribe.js"></script>
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>
