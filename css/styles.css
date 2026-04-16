@@ -228,7 +228,7 @@ h6 {
 .hero-bg-overlay {
     position: absolute;
     inset: 0;
-    background: url('assets/images/pakata-goh-EJMTKCZ00I0-unsplash.jpg') center/cover;
+    background: url('https://mohammadahmadalbourm.github.io/my-portfolio/assets/images/pakata-goh-EJMTKCZ00I0-unsplash.jpg') center/cover;
     opacity: 0.15;
     z-index: 1;
 }
