@@ -267,36 +267,6 @@
     document.body.insertBefore(skipLink, document.body.firstChild);
 
     // =========================================================
-    // Dark Mode Toggle (Optional Enhancement)
-    // =========================================================
-
-    // Uncomment to enable dark mode
-    /*
-    const darkModeToggle = document.createElement('button');
-    darkModeToggle.className = 'dark-mode-toggle';
-    darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    darkModeToggle.setAttribute('aria-label', 'Toggle dark mode');
-    document.body.appendChild(darkModeToggle);
-
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    const toggleDarkMode = () => {
-        document.body.classList.toggle('dark-mode');
-        const isDark = document.body.classList.contains('dark-mode');
-        darkModeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-        localStorage.setItem('darkMode', isDark);
-    };
-
-    darkModeToggle.addEventListener('click', toggleDarkMode);
-
-    // Check saved preference
-    if (localStorage.getItem('darkMode') === 'true' || 
-        (!localStorage.getItem('darkMode') && prefersDark.matches)) {
-        document.body.classList.add('dark-mode');
-    }
-    */
-
-    // =========================================================
     // Analytics: Track Button Clicks (Optional)
     // =========================================================
 
@@ -327,19 +297,6 @@
     console.log('%cInterested in the code? Let\'s connect!', 'color: #475569; font-size: 14px;');
     console.log('%cEmail: mohammadbourm@gmail.com', 'color: #22c55e; font-size: 12px;');
 
-    // =========================================================
-    // Service Worker Registration (PWA - Optional)
-    // =========================================================
-
-    /*
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js')
-                .then(reg => console.log('Service Worker registered'))
-                .catch(err => console.log('Service Worker registration failed'));
-        });
-    }
-    */
 
     // =========================================================
     // Page Load Performance Logging

@@ -1,0 +1,114 @@
+/* =========================================================
+   ABOUT
+========================================================= */
+.about-image-wrapper {
+    position: relative;
+}
+
+.about-decoration {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.about-image-wrapper img {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-slow) var(--ease-smooth);
+}
+
+.about-image-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.about-badge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 20px 30px;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.badge-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.badge-text {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-highlights {
+    display: grid;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(168, 85, 247, 0.05));
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--primary);
+}
+
+.highlight-item i {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.highlight-item span {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.about-cta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-outline-primary {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 14px 32px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: all var(--transition-normal);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}

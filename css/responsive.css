@@ -1,0 +1,93 @@
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 991px) {
+    :root {
+        --section-padding: 60px;
+    }
+
+    .navbar-collapse {
+        background: white;
+        padding: 20px;
+        margin-top: 15px;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-md);
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+    }
+
+    .contact-info-section,
+    .contact-form-section {
+        padding: 40px 30px;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-marker {
+        left: -38px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .service-card,
+    .timeline-content {
+        padding: 30px;
+    }
+
+    .about-badge {
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 20px;
+    }
+
+    .badge-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .tech-stack {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .back-to-top {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

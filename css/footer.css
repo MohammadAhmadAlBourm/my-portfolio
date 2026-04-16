@@ -1,0 +1,121 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-brand h3 {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-description {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.footer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 50px;
+    color: var(--primary-light);
+    font-size: 0.85rem;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.footer-text {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form {
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form .input-group {
+    display: flex;
+    gap: 0;
+}
+
+.newsletter-form .form-control {
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    border-right: none;
+}
+
+.newsletter-form .btn {
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 14px 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.1rem;
+    transition: all var(--transition-normal);
+}
+
+.footer-social a:hover {
+    background: var(--primary);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.footer-bottom .text-danger {
+    color: #ef4444;
+}
