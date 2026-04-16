@@ -1,163 +1,179 @@
 # 🌐 Personal Portfolio – Mohammad Al Bourm
 
-A modern, high-performance **personal portfolio website** for a Senior Software Engineer, built with a strong focus on **performance, SEO, security, and user experience**.
+A modern, high‑performance **personal portfolio website** built to represent the professional identity of a **Senior Software Engineer**.  
+The project focuses on **performance, security, SEO, accessibility, and premium user experience**, making it suitable for showcasing real enterprise‑level work.
 
 ---
 
 ## 🚀 Overview
 
-This project represents a **professional portfolio platform** showcasing:
+This portfolio serves as a complete professional platform that highlights:
 
-- Technical skills
-- Real-world enterprise projects
-- Services offered
-- Career experience
-- Contact system for potential clients
+- Technical expertise  
+- Real enterprise projects  
+- Services offered  
+- Career achievements  
+- Contact and communication channels  
 
-Designed to reflect a **premium developer brand identity** and attract high-quality clients.
+The design and structure aim to reflect a **strong personal brand** and attract high‑value clients and companies.
 
 ---
 
 ## ✨ Key Features
 
-### 🎨 Modern UI/UX Design
-- Clean and professional layout
-- Smooth animations and transitions
-- Fully responsive (Mobile / Tablet / Desktop)
-- Interactive sections and micro-interactions
+### 🎨 Modern UI/UX
+- Clean, elegant, and professional interface  
+- Smooth animations and transitions  
+- Fully responsive across all devices  
+- Interactive components and micro‑interactions  
 
 ---
 
-### ⚡ Performance Optimized
-- Optimized assets loading
-- Lazy loading images
-- Preconnect & DNS-prefetch
-- Lightweight structure
+### ⚡ Performance Optimization
+- Optimized asset loading  
+- Lazy‑loaded images  
+- Preconnect & DNS‑prefetch  
+- Lightweight and fast architecture  
 
 ---
 
 ### 🔐 Security Best Practices
-- Content Security Policy (CSP)
-- XSS protection headers
-- Secure form handling (Honeypot anti-spam)
-- Restricted external منابع
+- Strong Content Security Policy (CSP)  
+- XSS protection headers  
+- Secure form handling with honeypot anti‑spam  
+- Limited and controlled external resources  
 
 ---
 
-### 🔍 SEO Optimized
-- Meta tags (Open Graph + Twitter Cards)
-- Structured Data (Schema.org JSON-LD)
-- Canonical URL
-- Search engine friendly structure
+### 🔍 SEO Optimization
+- Complete meta tags (Open Graph + Twitter Cards)  
+- Structured Data using Schema.org (JSON‑LD)  
+- Canonical URLs  
+- Search‑engine‑friendly structure  
 
 ---
 
-### 📱 Fully Responsive
-- Mobile-first design
-- Adaptive layout لجميع الأجهزة
-- Bootstrap 5 grid system
+### 📱 Fully Responsive Layout
+- Mobile‑first approach  
+- Adaptive design for all screen sizes  
+- Built using Bootstrap 5 grid system  
 
 ---
 
-### 📊 Sections Included
+## 📊 Website Sections
 
-#### 🧭 Hero Section
-- Professional introduction
-- Experience stats
-- Call-to-action buttons
+### 🧭 Hero Section
+- Professional introduction  
+- Experience highlights  
+- Clear call‑to‑action buttons  
 
-#### 🛠️ Services Section
-- Full-Stack Development
-- Mobile Development (Flutter)
-- System Architecture
+### 🛠️ Services
+- Full‑Stack Development  
+- Mobile Development (Flutter)  
+- System Architecture & API Design  
 
-#### 💼 Projects Section
-- Real enterprise projects
-- Live links
-- Technologies used
-- Descriptions
+### 💼 Projects
+- Real enterprise‑level projects  
+- Live demos and links  
+- Technologies used  
+- Project descriptions  
 
-#### 👨‍💻 About Section
-- Background
-- Experience summary
-- Highlights
+### 👨‍💻 About
+- Background summary  
+- Technical journey  
+- Key strengths  
 
-#### 🧠 Skills Section
-- Backend (.NET, APIs)
-- Architecture (Clean Architecture, CQRS)
-- Databases (SQL Server, MongoDB, Redis)
-- Cloud & DevOps
-- Security
+### 🧠 Skills
+- Backend (.NET, APIs)  
+- Architecture (Clean Architecture, CQRS)  
+- Databases (SQL Server, MongoDB, Redis)  
+- Cloud & DevOps  
+- Security practices  
 
-#### 📈 Experience Timeline
-- Career progression
-- Achievements
-- Real impact metrics
+### 📈 Experience Timeline
+- Career progression  
+- Achievements  
+- Impact metrics  
 
-#### 📩 Contact Section
-- Contact form with validation
-- WhatsApp integration
-- Email links
-- Social media links
+### 📩 Contact
+- Contact form with validation  
+- WhatsApp integration  
+- Email and social links  
 
 ---
 
-### 💬 Extra Features
-- WhatsApp floating button
-- Back-to-top button
-- Newsletter subscription
-- Animated UI components
+## 💬 Additional Features
+- Floating WhatsApp button  
+- Back‑to‑top button  
+- Newsletter subscription  
+- Animated UI components  
 
 ---
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3 (Modular Structure)
-- JavaScript (Vanilla JS)
-- Bootstrap 5
-- Font Awesome
-- Google Fonts
+- HTML5  
+- CSS3 (Modular Architecture)  
+- JavaScript (Vanilla JS)  
+- Bootstrap 5  
+- Font Awesome  
+- Google Fonts  
 
 ---
 
 ## 📁 Project Structure
+
+```
 /assets
 /css
 /js
 /config
 index.html
 manifest.json
-
+```
 
 ---
 
 ## ⚙️ Setup & Usage
 
-1. Clone the repository:
+### 1. Clone the repository
 ```bash
 git clone https://github.com/your-repo/portfolio.git
+```
 
-Open index.html in your browser
-🔮 Future Improvements
-Backend integration (ASP.NET Core API)
-CMS for dynamic content
-Blog system
-Dark/Light theme toggle
-Analytics dashboard
-🎯 Purpose of This Project
+### 2. Open the project
+Simply open `index.html` in your browser.
 
-This project demonstrates:
+---
 
-Advanced Frontend Engineering
-SEO & Performance optimization
-Security best practices
-Real-world portfolio presentation
-👨‍💻 Author
+## 🔮 Future Enhancements
 
-Mohammad Al Bourm
-Senior Software Engineer
+- Backend integration (ASP.NET Core API)  
+- CMS for dynamic content  
+- Blog system  
+- Dark/Light mode toggle  
+- Analytics dashboard  
 
-📌 License
+---
+
+## 🎯 Purpose of This Project
+
+This portfolio demonstrates:
+
+- Advanced frontend engineering  
+- Performance & SEO optimization  
+- Security best practices  
+- Professional personal branding  
+
+---
+
+## 👨‍💻 Author
+
+**Mohammad Al Bourm**  
+Senior Software Engineer  
+
+---
+
+## 📌 License
 
 Open for personal and commercial use.
