@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showLoader();
 
         try {
-            const response = await fetch("https://localhost:7011/api/subscribe", {
+            const response = await fetch("https://api-mohammadbourm.runasp.net/api/subscribe", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
