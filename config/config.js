@@ -5,9 +5,9 @@
 (function () {
     'use strict';
     // Detect environment based on hostname
-    const hostname = window.location.hostname;
-    const isDevelopment = hostname === 'localhost' || hostname === '127.0.0.1';
-    const isProduction = hostname === 'mohammadalbourm.com' || hostname === 'www.mohammadalbourm.com';
+    //const hostname = window.location.hostname;
+    const isDevelopment = false; // Force production for all environments
+    const isProduction = true;
 
     // Configuration object
     window.SITE_CONFIG = {
@@ -16,8 +16,8 @@
 
         // API Configuration
         apiUrl: isDevelopment
-            ? 'https://localhost:7011/api'
-            : 'https://api.mohammadalbourm.com/api',
+            ? 'https://api-mohammadbourm.runasp.net/api'
+            : 'https://api-mohammadbourm.runasp.net/api',
 
         // Feature Flags
         enableLogging: isDevelopment,
